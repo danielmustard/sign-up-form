@@ -10,6 +10,7 @@
         /* :root {overflow-y: hidden; overflow-y: hidden;} */
     </style>
     <link rel="stylesheet" href="./style.css">
+    <script src="./main.js" defer></script>
 </head>
 <body>
 
@@ -48,13 +49,16 @@
                     <fieldset>
                         <label for="last_name">Last Name</label><input type="lastName" tabindex="2">
                         <label for="phone_number">Phone Number</label><input type="number" name="phone_number" id="phone_number" tabindex="4">
-                        <label for="confirm_password">Confirm Password</label><input type="password" id="confirm_password" tabindex="6">
+                        <label for="confirm_password">Confirm Password</label><input type="password" id="confirm_password" tabindex="6" oninput="verifyMatch()">
                     </fieldset>
                 </form>
             
         
 
     <div class="bottom-contain">
+        <span id="password_match"></span>
+        <br>
+        <br>
         <button onclick="submit" tabindex="7">Create Account</button>
 
         <h6>Already got an account? <span style="color: green ;">Log in</span></h6>

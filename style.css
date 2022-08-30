@@ -93,7 +93,12 @@ input, label{
     width: 65%;
 }
 input{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 3px;
     height: 30px;
+    border-bottom-color:gray;
 }
 
 label{
@@ -126,13 +131,16 @@ label{
 /* Button Styling */
 button{
     border: none;
-    background-color:#596D48;
+    background-color:#50C1B5;
     padding: 20px;
     border-radius: 5px;
-    color: white;
+    color: black;
     font-weight: bolder;
     width: 250px;
     font-size: 1.1pc;
 }
 
+input:focus{
+    background-color: #50C1B5;
+}
 
