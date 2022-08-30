@@ -1,28 +1,52 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Maze&display=swap');
 #side{
     float: left;
     height: 100vh;
     margin: auto;
     object-fit: cover;
     width: 25vw;
-    object-position: center;   
+    object-position: center;
+    position: relative; 
 }
 *{
     font-family: 'Merriweather Sans', sans-serif;
 }
 
-#odin-logo{
-    display: none;
-    background-color: rgba(0, 0, 0, 300);
-    position: relative;
-    height: 250px;
+.imageOverlay{
+    display: flex;
+    float: left;
+    justify-content: center;
+    align-items: center;
 }
+
+
+#odin-logo{
+    display: flex;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.491);
+}
+
+#odin-logo-text{
+    display: flex;
+    align-self: center;
+    font-size: 5pc;
+    font-family: 'Rubik Maze', cursive;
+    color: white;
+}
+
 .biggerText, .smaller{
     display: flex;
     padding-right: 50px;
     font-family: 'Merriweather Sans', sans-serif;
     padding-top: 30px;
     padding-left: 50px;
+}
+
+.odin-logo > img{
+    width: 100px;
+    display: flex;
+    flex-flow: column;
 }
 
 .biggerText{
