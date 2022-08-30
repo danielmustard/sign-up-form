@@ -42,14 +42,14 @@
                 <form action="">
                     <fieldset>
                         <label for="first_name">First Name</label><input type="first_name" tabindex="1">
-                        <label for="email">Email</label><input type="email" name="email" id="email" tabindex="3">
+                        <label for="email">Email</label><input type="email" name="email" required id="email" tabindex="3">
                         <label for="password">Password</label><input type="password" name="password" id="password" tabindex="5">
                     </fieldset>
         
                     <fieldset>
                         <label for="last_name">Last Name</label><input type="lastName" tabindex="2">
                         <label for="phone_number">Phone Number</label><input type="number" name="phone_number" id="phone_number" tabindex="4">
-                        <label for="confirm_password">Confirm Password</label><input type="password" id="confirm_password" tabindex="6" oninput="verifyMatch()">
+                        <label for="confirm_password">Confirm Password</label><input type="password" id="confirm_password" required tabindex="6" oninput="verifyMatch()">
                     </fieldset>
                 </form>
             
