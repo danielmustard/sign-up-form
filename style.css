@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&display=swap');
+#side{
+    float: left;
+    height: 100vh;
+    margin: auto;
+    object-fit: cover;
+    width: 25vw;
+    object-position: center;   
+}
+*{
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+#odin-logo{
+    display: none;
+    background-color: rgba(0, 0, 0, 300);
+    position: relative;
+    height: 250px;
+}
+.biggerText, .smaller{
+    display: flex;
+    padding-right: 50px;
+    font-family: 'Merriweather Sans', sans-serif;
+    padding-top: 30px;
+    padding-left: 50px;
+}
+
+.biggerText{
+    display: flex;
+    align-content: center; /* ADDED */
+    position: relative; /* ADDED */
+    font-size: 1.5pc;
+    font-weight: bold;
+    width: 70%;
+}
+.smaller{
+    font-weight: bold;
+}
+
+.formContainer{
+    display: flex;
+    padding-left: 50px;
+    padding-right: 50px;
+    /* Makes flex container fill available space */
+    flex-flow: column;
+    justify-content: center;
+    gap: 40px;
+    padding-top: 40px;
+}
+
+#lets-go{
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 20px;
+}
+
+/* Form display options */
+form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+form > fieldset{
+    border: none;
+}
+
+input, label{
+    display: block;
+    width: 65%;
+}
+input{
+    height: 30px;
+}
+
+label{
+    margin-top: 10px;
+}
+
+label{
+    padding-top: 10px;
+    text-transform: uppercase;
+    font-size: medium;
+    color: gray;
+    font-weight: bolder;
+}
+
+/* Button bottom elements */
+
+.bottom-contain{
+    display: flex;
+    padding-right: 50px;
+    display: block;
+}
+
+.topText{
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+/* Button Styling */
+button{
+    border: none;
+    background-color:#596D48;
+    padding: 20px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bolder;
+    width: 250px;
+    font-size: 1.1pc;
+}
+
+
